@@ -72,6 +72,7 @@ $channel = $channelRes->getItems()[0];
 if ($channel) {
     echo "<h2>{$channel->getSnippet()->getTitle()}</h2>";
     echo "<p>{$channel->getSnippet()->getDescription()}</p>";
+    echo "<p><a href='{$channel->getSnippet()->getCustomUrl()}' class='btn ytBtn'>Visit On Youtube</a></p>";
 }
 
 

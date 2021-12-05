@@ -42,7 +42,7 @@ input {
     margin-bottom: 0.5rem;
 }
 
-button {
+button, .btn {
     padding: 0.5rem;
     background-color: dodgerblue;
     color: white;
@@ -50,6 +50,10 @@ button {
     font-weight: 500;
     border-radius: .15rem;
     cursor: pointer;
+}
+
+.ytBtn.btn {
+    background-color: rgb(223, 39, 39);
 }
 
 label {
