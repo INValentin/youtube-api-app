@@ -72,7 +72,7 @@ $channel = $channelRes->getItems()[0];
 if ($channel) {
     echo "<h2>{$channel->getSnippet()->getTitle()}</h2>";
     echo "<p>{$channel->getSnippet()->getDescription()}</p>";
-    echo "<p><a href='{$channel->getSnippet()->getCustomUrl()}' class='btn ytBtn'>Visit On Youtube</a></p>";
+    echo "<p><a href='https://www.youtube.com/{$channel->getSnippet()->getCustomUrl()}' class='btn ytBtn'>Visit On Youtube</a></p>";
 }
 
 
@@ -102,8 +102,8 @@ echo "</div>";
 function showForm()
 {
 ?>
+    <h2>Find a channel</h2>
     <form action="" method="GET">
-        <h2>Find a channel</h2>
         <label for="channel">Channel Name</label>
         <input value="<?php echo !empty($_REQUEST['channel']) ? $_REQUEST['channel'] : 'googledevelopers' ?>" type="text" id="channel" name="channel" placeholder="Enter channel name!">
         <label for="maxRes">Max Videos</label>
